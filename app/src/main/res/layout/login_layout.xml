@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+<!--<ImageView-->
+    <!--android:id="@+id/imageview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="fitXY"-->
+    <!--/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:columnCount="1"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:text="登录"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="43dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal|center_vertical" >
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="账户"
+                app:met_textColorHint="@color/white"
+                android:inputType="textPersonName"
+                app:met_helperText="请输入你的账号"
+                app:met_helperTextColor="#da000000"
+                app:met_clearButton="true"
+               >
+
+                <requestFocus />
+            </com.rengwuxian.materialedittext.MaterialEditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="密码"
+                app:met_clearButton="true"
+                android:inputType="textPassword"
+                app:met_helperText="请输入你的密码"
+                app:met_helperTextColor="#da000000"
+               app:met_textColorHint="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_above="@+id/linearLayout5"
+            android:layout_alignParentStart="true">
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_OK"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:background="@drawable/btn_login_ok_style"-->
+                <!--android:text="LOG IN"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="15sp"-->
+               <!--/>-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:elevation="3dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="5dp"
+                android:clickable="true"
+                android:stateListAnimator="@drawable/cardview_touch_anim"
+
+                app:cardBackgroundColor="@color/colorItemNormal"
+                android:foreground="?attr/selectableItemBackground"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="LOG IN"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btn_zhuce"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:elevation="3dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="5dp"
+                android:clickable="true"
+                android:stateListAnimator="@drawable/cardview_touch_anim"
+
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:foreground="?attr/selectableItemBackground"
+               >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Register"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/cb_remeber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="记住密码"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_find_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:paddingRight="25.0dip"
+                    android:text="忘记密码？"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

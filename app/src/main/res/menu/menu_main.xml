@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="搜索"
+        android:icon="@drawable/ic_search_white"
+         />
+    <item
+        android:id="@+id/action_baokan"
+        android:title="报刊栏"
+        android:orderInCategory="200"
+         />
+</menu>

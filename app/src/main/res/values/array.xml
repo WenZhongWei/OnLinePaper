@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name= "progress_colors">
+            <item>@color/white</item>
+        <item>@color/colorItemNormal</item>
+        <item>#f7ce00</item>
+            <item>@android:color/darker_gray</item>
+    </array>
+</resources>

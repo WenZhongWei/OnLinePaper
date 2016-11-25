@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="15dp"
+    app:cardMaxElevation="5dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/id_dialog_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/item_click"
+            android:text="取消"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/id_dialog_context"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+        <Button
+            android:id="@+id/id_dialog_zhuxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/item_click"
+            android:text="注销"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="10dp"
+            android:layout_alignBottom="@+id/id_dialog_quxiao"
+            android:layout_toStartOf="@+id/id_dialog_quxiao" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否要注销登录？"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/id_dialog_context" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

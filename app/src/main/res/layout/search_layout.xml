@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+  <include layout="@layout/search_include_layout"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/id_search_linearlayout"
+        app:layout_anchorGravity="bottom|right"
+        android:src="@drawable/ic_search_white"
+        android:layout_margin="15dp"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        android:id="@+id/id_search_fab"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:pressedTranslationZ="12dp"
+        android:clickable="true"/>
+    <!-- borderwidth 该属性尤为重要，如果不设置0dp，那么在4.1的sdk上FAB会显示为正方形，
+    而且在5.0以后的sdk没有阴影效果。所以设置为borderWidth="0dp"-->
+</android.support.design.widget.CoordinatorLayout>

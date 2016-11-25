@@ -1,0 +1,2 @@
+include ':app'
+include ':nice-spinner-master'

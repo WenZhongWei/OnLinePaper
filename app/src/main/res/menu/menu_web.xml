@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_anim"
+        android:orderInCategory="100"
+        android:title="切换效果"
+        app:showAsAction="collapseActionView"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/action_comment"
+        android:orderInCategory="100"
+        android:title="评论"
+        app:showAsAction="collapseActionView"
+        tools:ignore="AppCompatResource" />
+
+
+
+
+</menu>

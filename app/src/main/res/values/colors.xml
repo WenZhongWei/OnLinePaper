@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1ba1e2</color> <!-- actionbar颜色-->
+    <color name="colorPrimaryDark">#1982b6</color><!-- 顶部状态栏颜色-->
+    <color name="colorItemNormal">#8bc34a</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background">#f5f5f5</color>
+    <color name="darkWhite">#e5e5e5</color>
+    <color name="blue">#b55dcaff</color>
+    <!--<color name="colorNavigationBar">#1ba1e2</color>&lt;!&ndash; 返回键导航栏颜色&ndash;&gt;-->
+</resources>

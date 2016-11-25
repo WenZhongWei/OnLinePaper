@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/id_comment_toolbar"
+        android:background="@color/colorPrimary"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/review"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新评论"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_comment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#f7f7f7"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:id="@+id/id_comment_send" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:hint="写评论"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/id_comment_edittext"
+                android:layout_alignParentStart="true"
+                app:met_singleLineEllipsis="false"
+                android:layout_toStartOf="@+id/id_comment_send" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

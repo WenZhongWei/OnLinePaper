@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/id_webactivity_toolbar"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+<TextView
+    android:id="@+id/id_web_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="0"
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:gravity="center"/>
+</android.support.v7.widget.Toolbar>
+    <com.example.xx.htmlproject.MyViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#999999">
+
+    </com.example.xx.htmlproject.MyViewPager>
+
+
+</LinearLayout>

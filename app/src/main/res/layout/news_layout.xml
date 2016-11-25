@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginStart="100dp"
+            app:expandedTitleMarginEnd="64dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/news_bg"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="0.7"  />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            >
+
+        </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/news_layout_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@mipmap/new_fab"
+        app:layout_anchor="@id/appbar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+
+    <!-- 工具栏下的布局-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5"
+        android:orientation="vertical"
+        android:clipToPadding="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        tools:context="com.example.xx.htmlproject.MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/layout_shape"
+            />
+            <!-- 主窗口的内容-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/id_recycleView"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical">
+                        <!--滑动条-->
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

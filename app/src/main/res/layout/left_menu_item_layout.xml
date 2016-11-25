@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        android:layout_margin="0dp"
+        app:cardBackgroundColor="@color/white"
+        >
+        <ImageView
+            android:id="@+id/id_left_menu_item_imageview"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:src="@android:drawable/ic_dialog_email"/>
+
+        <TextView
+            android:id="@+id/id_left_menu_item_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:textSize="20sp"
+            android:textColor="#B4B4B4"
+            android:text="点我"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
